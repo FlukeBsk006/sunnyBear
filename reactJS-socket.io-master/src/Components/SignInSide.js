@@ -90,7 +90,7 @@ export default function SignInSide() {
         localStorage.setItem('accessToken', response['accessToken']);
         localStorage.setItem("userName", response['user']['username']);
         localStorage.setItem("picture", response['user']['avatar']);
-        window.location.href = "/";
+        window.location.href = "/index";
       });
     } else {
       swal("Failed", response.message, "error");
